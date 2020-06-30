@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="These instructions will help you in setup flutter and mobile application.">
+<meta name="keywords" content=" ">
+<title>Clipix Documentation | Clipx Documentation</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-clipx" href="opuslabsin.github.io/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top" style="min-height:75px;">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img style="height:50px;" src="images/company_logo.png" alt="Company logo"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" style="margin-top:12px;">
+                <!-- toggle sidebar button -->
+                <!--<li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>-->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://opuslabs.freshdesk.com/" target="_blank">Support</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+
+        <!-- Content Column -->
+        <div class="col-md-12" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Clipix Documentation</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">These instructions will help you in setup flutter and mobile application.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+
+    
+
+  <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Video guide for getting Debug SHA1 fingerprint is available, checkout <a href="https://www.youtube.com/watch?v=OQl6Me2_gEA">https://www.youtube.com/watch?v=OQl6Me2_gEA</a></div>
+
+<h1 id="introduction">Introduction</h1>
+<p>Clipix is video streaming app template.</p>
+
+<h1 id="setup">Setup</h1>
+
+<ol>
+  <li>
+    <h3 id="flutter">Flutter</h3>
+
+    <p>1.Android Setup</p>
+
+    <p><strong>Get the Flutter SDK</strong> <a href="https://flutter.dev/docs/get-started/install/windows#get-the-flutter-sdk">https://flutter.dev/docs/get-started/install/windows#get-the-flutter-sdk</a>
+ <strong>Update your path</strong> <a href="https://flutter.dev/docs/get-started/install/windows#update-your-path">https://flutter.dev/docs/get-started/install/windows#update-your-path</a>
+ <strong>Run flutter doctor</strong> <a href="https://flutter.dev/docs/get-started/install/windows#run-flutter-doctor">https://flutter.dev/docs/get-started/install/windows#run-flutter-doctor</a></p>
+
+    <ul>
+      <li>Install Android Studio
+        <ul>
+          <li>Download and install <a href="https://developer.android.com/studio">Android Studio</a>.</li>
+          <li>Start Android Studio, and go through the ‘Android Studio Setup Wizard’. This installs the latest Android SDK, Android SDK Command-line Tools, and Android SDK Build-Tools, which are required by Flutter when developing for Android.</li>
+        </ul>
+      </li>
+      <li>Set up your Android device</li>
+      <li>To prepare to run and test your Flutter app on an Android device, you need an Android device running Android 4.1 (API level 16) or higher.</li>
+      <li>Enable <strong>Developer options</strong> and <strong>USB debugging</strong> on your device. Detailed instructions are available in the <a href="https://developer.android.com/studio/debug/dev-options">Android documentation</a>.</li>
+      <li>Windows-only: Install the <a href="https://developer.android.com/studio/run/win-usb">Google USB Driver</a>.</li>
+      <li>Using a USB cable, plug your phone into your computer. If prompted on your device, authorize your computer to access your device.</li>
+      <li>
+        <p>In the terminal, run the flutter devices command to verify that Flutter recognizes your connected Android device. By default, Flutter uses the version of the Android SDK where your adb tool is based. If you want Flutter to use a different installation of the Android SDK, you must set the ANDROID_SDK_ROOT environment variable to that installation directory.</p>
+      </li>
+      <li>Set up the Android emulator
+        <ul>
+          <li>To prepare to run and test your Flutter app on the Android emulator, follow these steps:</li>
+          <li>Enable <a href="https://developer.android.com/studio/run/emulator-acceleration">VM acceleration</a> on your machine.</li>
+          <li>Launch <strong>Android Studio &gt; Tools &gt; Android &gt; AVD Manager</strong> and select <strong>Create Virtual Device</strong>. (The <strong>Android</strong> submenu is only present when inside an Android project.)</li>
+          <li>Choose a device definition and select Next.</li>
+          <li>Select one or more system images for the Android versions you want to emulate, and select Next. An x86 or x86_64 image is recommended.</li>
+          <li>Under Emulated Performance, select Hardware - GLES 2.0 to enable <a href="https://developer.android.com/studio/run/emulator-acceleration">hardware acceleration</a>.</li>
+          <li>Verify the AVD configuration is correct, and select Finish.</li>
+        </ul>
+      </li>
+      <li>For details on the above steps, see Managing AVDs.
+        <ul>
+          <li>In Android Virtual Device Manager, click Run in the toolbar. The emulator starts up and displays the default canvas for your selected OS version and device.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Install the Flutter and Dart plugins
+    <ul>
+      <li>To install these:
+        <ul>
+          <li>Start Android Studio.</li>
+          <li>Open plugin preferences (Configure &gt; Plugins as of v3.6.3.0 or later).</li>
+          <li>Select the Flutter plugin and click Install.</li>
+          <li>Click Yes when prompted to install the Dart plugin.</li>
+          <li>Click Restart when prompted.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>3.Run the app</p>
+    <ul>
+      <li>Open Android Studio
+        <ul>
+          <li>Go to <strong>File</strong> menu</li>
+          <li>Click on <strong>Open</strong></li>
+          <li>Then select the flutter project and click on open.</li>
+          <li>Go to lib folder in project</li>
+          <li>Locate the main <a href="https://flutter.dev/assets/tools/android-studio/main-toolbar-857fe8c36d38020e27b502ec643ea8b1716edbe150cc6e39e3560f8fb7bda5b2.png">Android Studio toolbar</a></li>
+          <li>In the <strong>target selector</strong>, select an Android device for running the app. If none are listed as available, select <strong>Tools&gt; Android &gt; AVD Manager</strong> and create one there. For details, see <a href="https://developer.android.com/studio/run/managing-avds">Managing AVDs</a>.</li>
+          <li>Click the run icon in the toolbar, or invoke the menu item <strong>Run &gt; Run</strong>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>*Warning: When launching your app from a Mac, if you see ERROR: Could not connect to lockdownd, error code -17, make sure that you have trusted your computer.</strong></p>
+
+<p>After the app build completes, you’ll see the app on your device.</p>
+
+<p><strong>Note: If you are unable to understand any topic or find any topic needs more elaboration. 
+Please raise an issue ticket at this link <a href="https://opuslabs.freshdesk.com">https://opuslabs.freshdesk.com</a></strong></p>
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2020 Opus Labs. All rights reserved. <br />
+ Site last generated: Jul 1, 2020 <br />
+<p><img src="images/company_logo_dark.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-122814558-2','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>
