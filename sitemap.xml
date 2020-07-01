@@ -9,12 +9,6 @@
   
   
   
-  <url>
-    <loc>opuslabsin.github.io/index.html</loc>
-  </url>
-  
-  
-  
   
   
   
@@ -25,6 +19,12 @@
   
   <url>
     <loc>opuslabsin.github.io/assets/css/style.css</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>opuslabsin.github.io/</loc>
   </url>
   
   

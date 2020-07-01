@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="These instructions will help you in setup flutter and mobile application.">
+<meta name="description" content="">
 <meta name="keywords" content=" ">
-<title>Clipix Documentation | Clipx Documentation</title>
+<title> | Clipx Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -141,19 +141,76 @@
     <div class="row">
         
         
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a href="#">Products</a>
+      <ul>
+          
+          
+          
+          <li><a href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="mydoc_introduction.html">Theme instructions</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="p1_landing_page.html">Product 1</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="p2_landing_page.html">Product 2</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
 
         <!-- Content Column -->
-        <div class="col-md-12" id="tg-sb-content">
+        <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Clipix Documentation</h1>
+   <h1 class="post-title-main"></h1>
 </div>
 
 
 
 <div class="post-content">
 
-   
-    <div class="summary">These instructions will help you in setup flutter and mobile application.</div>
    
 
     
@@ -187,18 +244,27 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Video guide for getting Debug SHA1 fingerprint is available, checkout <a href="https://www.youtube.com/watch?v=OQl6Me2_gEA">https://www.youtube.com/watch?v=OQl6Me2_gEA</a></div>
+  
+<hr />
+<p>title: “Flutter Template Installation Documentation”
+keywords: 
+sidebar: 
+hide_sidebar: true 
+search: false
+permalink: index.html
+summary: These instructions will help you in setup flutter template.
+—</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Video guide for getting Debug SHA1 fingerprint is available, checkout <a href="https://www.youtube.com/watch?v=OQl6Me2_gEA">https://www.youtube.com/watch?v=OQl6Me2_gEA</a></div>
 
 <h1 id="introduction">Introduction</h1>
-<p>Clipix is video streaming app template.</p>
+<p>This document will guide you through the process of Installtion.</p>
 
 <h1 id="setup">Setup</h1>
 
 <ol>
   <li>
-    <h3 id="flutter">Flutter</h3>
-
-    <p>1.Android Setup</p>
+    <h3 id="android-setup">Android Setup</h3>
 
     <p><strong>Get the Flutter SDK</strong> <a href="https://flutter.dev/docs/get-started/install/windows#get-the-flutter-sdk">https://flutter.dev/docs/get-started/install/windows#get-the-flutter-sdk</a>
  <strong>Update your path</strong> <a href="https://flutter.dev/docs/get-started/install/windows#update-your-path">https://flutter.dev/docs/get-started/install/windows#update-your-path</a>
@@ -211,13 +277,14 @@ $('#toc').on('click', 'a', function() {
           <li>Start Android Studio, and go through the ‘Android Studio Setup Wizard’. This installs the latest Android SDK, Android SDK Command-line Tools, and Android SDK Build-Tools, which are required by Flutter when developing for Android.</li>
         </ul>
       </li>
-      <li>Set up your Android device</li>
-      <li>To prepare to run and test your Flutter app on an Android device, you need an Android device running Android 4.1 (API level 16) or higher.</li>
-      <li>Enable <strong>Developer options</strong> and <strong>USB debugging</strong> on your device. Detailed instructions are available in the <a href="https://developer.android.com/studio/debug/dev-options">Android documentation</a>.</li>
-      <li>Windows-only: Install the <a href="https://developer.android.com/studio/run/win-usb">Google USB Driver</a>.</li>
-      <li>Using a USB cable, plug your phone into your computer. If prompted on your device, authorize your computer to access your device.</li>
-      <li>
-        <p>In the terminal, run the flutter devices command to verify that Flutter recognizes your connected Android device. By default, Flutter uses the version of the Android SDK where your adb tool is based. If you want Flutter to use a different installation of the Android SDK, you must set the ANDROID_SDK_ROOT environment variable to that installation directory.</p>
+      <li>Set up your Android device
+        <ul>
+          <li>To prepare to run and test your Flutter app on an Android device, you need an Android device running Android 4.1 (API level 16) or higher.</li>
+          <li>Enable <strong>Developer options</strong> and <strong>USB debugging</strong> on your device. Detailed instructions are available in the <a href="https://developer.android.com/studio/debug/dev-options">Android documentation</a>.</li>
+          <li>Windows-only: Install the <a href="https://developer.android.com/studio/run/win-usb">Google USB Driver</a>.</li>
+          <li>Using a USB cable, plug your phone into your computer. If prompted on your device, authorize your computer to access your device.</li>
+          <li>In the terminal, run the flutter devices command to verify that Flutter recognizes your connected Android device. By default, Flutter uses the version of the Android SDK where your adb tool is based. If you want Flutter to use a different installation of the Android SDK, you must set the ANDROID_SDK_ROOT environment variable to that installation directory.</li>
+        </ul>
       </li>
       <li>Set up the Android emulator
         <ul>
@@ -237,20 +304,21 @@ $('#toc').on('click', 'a', function() {
       </li>
     </ul>
   </li>
-  <li>Install the Flutter and Dart plugins
+  <li>
+    <h3 id="install-flutter-and-dart-plugins">Install Flutter and Dart plugins</h3>
     <ul>
-      <li>To install these:
-        <ul>
-          <li>Start Android Studio.</li>
-          <li>Open plugin preferences (Configure &gt; Plugins as of v3.6.3.0 or later).</li>
-          <li>Select the Flutter plugin and click Install.</li>
-          <li>Click Yes when prompted to install the Dart plugin.</li>
-          <li>Click Restart when prompted.</li>
-        </ul>
-      </li>
+      <li>To install these:</li>
     </ul>
-
-    <p>3.Run the app</p>
+    <ul>
+      <li>Start Android Studio.</li>
+      <li>Open plugin preferences (Configure &gt; Plugins as of v3.6.3.0 or later).</li>
+      <li>Select the Flutter plugin and click Install.</li>
+      <li>Click Yes when prompted to install the Dart plugin.</li>
+      <li>Click Restart when prompted.</li>
+    </ul>
+  </li>
+  <li>
+    <h3 id="run-the-app">Run the app</h3>
     <ul>
       <li>Open Android Studio
         <ul>

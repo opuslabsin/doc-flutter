@@ -5,17 +5,6 @@
 
 
 
-{
-"title": "Clipix Documentation",
-"tags": "",
-"keywords": "",
-"url": "index.html",
-"summary": "These instructions will help you in setup flutter and mobile application."
-}
-,
-
-
-
 
 
 
@@ -29,6 +18,17 @@
 "tags": "",
 "keywords": "",
 "url": "assetscssstyle.css",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "",
 "summary": ""
 }
 
