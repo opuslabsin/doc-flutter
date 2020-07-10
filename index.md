@@ -2,7 +2,7 @@
 ---
 title: "Flutter Template Installation Documentation"
 keywords: 
-sidebar: 
+sidebar: false
 hide_sidebar: true 
 search: false
 permalink: index.html
