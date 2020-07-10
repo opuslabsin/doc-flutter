@@ -9,8 +9,6 @@ permalink: index.html
 summary: These instructions will help you in setup flutter template.
 ---
 
-{% include note.html content="Video guide for getting Debug SHA1 fingerprint is available, checkout [https://www.youtube.com/watch?v=OQl6Me2_gEA](https://www.youtube.com/watch?v=OQl6Me2_gEA)" %}
-
 # Introduction
 This document will guide you through the process of Installtion.
 
